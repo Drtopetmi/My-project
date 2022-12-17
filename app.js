@@ -25,6 +25,7 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#Humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#Pressure").innerHTML = response.data.main.pressure;
@@ -61,8 +62,8 @@ locationButton.addEventListener("click", getCurrentPosition);
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
