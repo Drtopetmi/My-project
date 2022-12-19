@@ -82,3 +82,11 @@ h5 {
   font-size: 80px;
   color: white;
 }
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
