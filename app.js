@@ -14,6 +14,8 @@ function formatDate(now) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
+
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -34,7 +36,7 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
+displayForecast();
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
