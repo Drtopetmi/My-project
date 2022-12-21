@@ -14,6 +14,26 @@ function formatDate(now) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+            <div class="forecast-date">${day}</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="40"/>
+            <div class="forecast-temperatures">
+              <span class="forecast-temperature-max">3°</span>
+              <span class="forecast-temperature-min">-1°</span>
+              </div>
+                </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
