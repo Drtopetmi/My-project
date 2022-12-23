@@ -36,25 +36,21 @@
         </button>
     <button id="location-button">Location</button>
       </form>
-      <h1 id="city">Frasdorf, Germany</h1>
+      <h1 id="city"></h1>
       <ul>
-        <l1 id="date"> Sunday 01:00 </l1>
+       <l1> Last updated:<span id="date"></span></l1>
       </ul>
       <h2><img src=" http://openweathermap.org/img/wn/10d@2x.png" id="icon"/></h2>
       <div class="float-left">
-        <span class="temperature" id="temperature"> 5 </span
-        ><span class="unit"
-          ><a href="#" id="celsius-link" class="active">℃</a>|<a href="#" id="fahrenheit-link"
-            >|°F</a
-          ></span
-        >
+        <strong id="temperature" class="temperature"></strong>
+        ><span class="unit">℃</span>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title" id="description">Cloudy</h3>
-              <p class="card-text">
+              <h3 class="quality" id="quality">Cloudy</h3>
+              <p class="description" id="description">
                 The sky becomes mostly clear. The lows are 1° degrees.
                 Temperatures close to freezing.
               </p>
