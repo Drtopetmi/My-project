@@ -51,6 +51,7 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+
 function getForecast(coordinates) {
   let apiKey = "63214c4281922e3bb72fdf12dada7734";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
@@ -93,8 +94,8 @@ function showTemperature(response) {
   
 function handleSubmit(event) {
   event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
-   search(cityInput.value);
+  let cityInputElement = document.querySelector("#city-input");
+   search(cityInputElement.value);
   }
 
 let searchForm = document.querySelector("#search-form");
