@@ -13,7 +13,7 @@ h1 {
   color: white;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
-  font-size:40px;
+  font-size: 40px;
 }
 
 h3 {
@@ -30,7 +30,7 @@ h4 {
 h5 {
   color: white;
   position: relative;
-  top: -50px;
+  top: -70px;
   font-weight: 400;
   font-size: 35px;
   font-family: "Roboto", sans-serif;
@@ -46,7 +46,7 @@ h5 {
     rgba(7, 43, 127, 067);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  border-radius:5px;
+  border-radius: 5px;
 }
 .forecast-date {
   position: relative;
@@ -63,8 +63,8 @@ h5 {
 
 .col-3 {
   color: white;
-  position:relative;
-  top:-100px;
+  position: relative;
+  top: -100px;
 }
 .col-2 {
   color: white;
@@ -83,11 +83,14 @@ h5 {
 .search-button {
   padding: 2px 5px;
 }
+.location {
+  padding: 2px 5px;
+}
 .unit {
   position: relative;
   top: -150px;
   right: -50px;
-  color:white;
+  color: white;
 }
 .temperature {
   position: relative;
